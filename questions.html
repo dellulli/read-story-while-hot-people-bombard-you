@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .questions-container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+        }
+        #doneButton {
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #doneButton:hover {
+            background-color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+    <div class="questions-container">
+        <h1>Answer the Questions</h1>
+        <form id="quizForm">
+            <div class="question">
+                <p>1) What are the first words Mary says to her husband?</p>
+                <label><input type="radio" name="q1" value="Hello, darling."> Hello, darling.</label>
+                <label><input type="radio" name="q1" value="Hullo, darling."> Hullo, darling.</label>
+                <label><input type="radio" name="q1" value="I love michonne."> I love michonne.</label>
+            </div>
+            <div class="question">
+                <p>2) What is the grocer's name?</p>
+                <label><input type="radio" name="q2" value="Patrick"> Patrick</label>
+                <label><input type="radio" name="q2" value="Marianne"> Marianne</label>
+                <label><input type="radio" name="q2" value="Sam"> Sam</label>
+                <label><input type="radio" name="q2" value="Noonan"> Noonan</label>
+            </div>
+            <div class="question">
+                <p>3) What happens at the end of the story?</p>
+                <label><input type="radio" name="q3" value="Mary confesses to the crime and turns herself in."> Mary confesses to the crime and turns herself in.</label>
+                <label><input type="radio" name="q3" value="The detectives find the murder weapon hidden in the backyard."> The detectives find the murder weapon hidden in the backyard.</label>
+                <label><input type="radio" name="q3" value="The detectives unknowingly eat the murder weapon."> The detectives unknowingly eat the murder weapon.</label>
+                <label><input type="radio" name="q3" value="Mary runs away from the crime scene before the police arrive."> Mary runs away from the crime scene before the police arrive.</label>
+            </div>
+            <div class="question">
+                <p>4) What does her husband tell her that makes Mary kill him?</p>
+                <label><input type="radio" name="q4" value="He wants her to cook dinner immediately."> He wants her to cook dinner immediately.</label>
+                <label><input type="radio" name="q4" value="He has lost his job and they are moving away."> He has lost his job and they are moving away.</label>
+                <label><input type="radio" name="q4" value="He is leaving her and wants a divorce."> He is leaving her and wants a divorce.</label>
+                <label><input type="radio" name="q4" value="He is upset about the way she decorated the house."> He is upset about the way she decorated the house.</label>
+            </div>
+            <button id="doneButton" type="button">Done</button>
+        </form>
+    </div>
+
+    <script src="questionsScript.js"></script>
+</body>
+</html>
